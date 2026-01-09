@@ -7,7 +7,7 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   height: 100vh;
@@ -22,6 +22,10 @@ body {
   color: white;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.35);
 }
 .green-btn {
   background: rgba(70, 145, 101, 1);
@@ -32,9 +36,7 @@ body {
 }
 
 /* header  */
-header {
-  /* padding: 16px 0; */
-}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -44,9 +46,6 @@ header {
 .nav-logo {
   width: 140px;
   height: 60px;
-}
-.nav-logo:hover {
-  cursor: none;
 }
 
 .menu-items ul {
@@ -64,6 +63,11 @@ header {
   color: #000;
   transition: 0.15s ease-in-out;
 }
+.menu-items a:focus {
+  outline: 2px solid #2faa63;
+  outline-offset: 4px;
+}
+
 /* menu hover  */
 .menu-items li:hover {
   background: #469165;
@@ -136,7 +140,7 @@ header {
   gap: 8px;
 }
 .banner-btn .green-btn {
-  border: 1px solid #469165;
+  border: 1px solid transparent;
 }
 .transparent {
   background: transparent;
@@ -145,7 +149,6 @@ header {
 .banner-btn .green-btn:hover {
   background: transparent;
   color: white;
-  border: 2px solid #2faa63;
 }
 .transparent:hover {
   background: #469165;
@@ -163,7 +166,7 @@ header {
 }
 .notes-title {
   font-size: 48px;
-  font-weight: 700px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 .notes-description {
@@ -186,7 +189,13 @@ header {
   height: 300px;
   border-radius: 20px 20px 0 0;
   padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
 .icon-circle {
   background: #f95555;
   width: 60px;
@@ -270,7 +279,6 @@ header {
 /* footer  */
 footer {
   background: #001931;
-  margin-bottom: 200px;
   color: white;
 }
 .footer-container {
