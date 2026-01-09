@@ -1,0 +1,302 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  height: 100vh;
+  width: 100%;
+}
+/* common styles */
+
+.btn {
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.green-btn {
+  background: rgba(70, 145, 101, 1);
+}
+.container {
+  max-width: 82%;
+  margin: 0 auto;
+}
+
+/* header  */
+header {
+  /* padding: 16px 0; */
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+.nav-logo {
+  width: 140px;
+  height: 60px;
+}
+.nav-logo:hover {
+  cursor: none;
+}
+
+.menu-items ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+.menu-items li {
+  padding: 10px 16px;
+  transition: 0.15s ease-in-out;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.15s ease-in-out;
+}
+/* menu hover  */
+.menu-items li:hover {
+  background: #469165;
+  border-radius: 20px;
+  color: white;
+}
+.menu-items a:hover {
+  color: white;
+  border-radius: 8px;
+}
+.green-btn:hover {
+  color: #469165;
+  background: rgb(234, 234, 234);
+  border: 1px solid rgb(214, 214, 214);
+}
+
+/* banner hero section */
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.15)),
+    url("./assets/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  /* filter: brightness(90%); */
+}
+.banner-msg {
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.early-access {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  color: #469165;
+  margin-bottom: 10px;
+
+  display: flex;
+  gap: 8px;
+}
+.early-access img {
+  object-fit: cover;
+}
+
+.banner-title {
+  font-size: 72px;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+.banner-title span {
+  color: #2faa63;
+}
+
+.banner-description {
+  text-align: center;
+  line-height: 24px;
+  color: white;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.banner-btn {
+  display: flex;
+  gap: 20px;
+}
+.banner-btn .btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.banner-btn .green-btn {
+  border: 1px solid #469165;
+}
+.transparent {
+  background: transparent;
+  border: 1px solid white;
+}
+.banner-btn .green-btn:hover {
+  background: transparent;
+  color: white;
+  border: 2px solid #2faa63;
+}
+.transparent:hover {
+  background: #469165;
+  border: 1px solid #469165;
+}
+/* hero section end  */
+
+/* notes sectin  */
+.notes {
+  background: #f8f8f8;
+}
+.notes-title-des {
+  padding: 50px 0 20px;
+  text-align: center;
+}
+.notes-title {
+  font-size: 48px;
+  font-weight: 700px;
+  margin-bottom: 10px;
+}
+.notes-description {
+  font-weight: 400;
+}
+/* notes card  */
+.notes-card {
+  display: flex;
+  gap: 24px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  background: rgb(255, 255, 255);
+  width: 322px;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+  padding: 24px;
+}
+.icon-circle {
+  background: #f95555;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* second brain section  */
+.second-brain {
+  margin: 90px 0px;
+}
+.brain-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brain-img {
+  width: 600px;
+  height: 600px;
+  margin-right: 75px;
+}
+/* brain aside part  */
+.solution {
+  color: #2faa63;
+  text-transform: uppercase;
+}
+.brain-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.brain-description {
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 2.1;
+}
+/* brain section end  */
+
+/* challange part  */
+.chl-arly-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f7f6f2;
+  padding: 80px 12px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.chl-arly-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.chl-arly-container .description {
+  font-weight: 400;
+  margin: 24px 0;
+}
+.chl-arly-container .green-btn {
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+.chl-arly-container .green-btn:hover {
+  background: #207242;
+  color: #f7f7f7;
+}
+.arly-access-footer {
+  font-weight: 400;
+}
+/* challenge part end  */
+
+/* footer  */
+footer {
+  background: #001931;
+  margin-bottom: 200px;
+  color: white;
+}
+.footer-container {
+  padding: 80px 0 0;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.footer-logo img {
+  width: 140px;
+  height: 60px;
+}
+
+.social-links p {
+  font-size: 20px;
+}
+.social-links i {
+  color: white;
+}
+
+.copyright-footer {
+  text-align: center;
+  padding: 30px;
+  font-weight: 300;
+}
